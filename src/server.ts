@@ -2,7 +2,7 @@ import app from "./app";
 
 function main() {
     try {
-        app.listen(3000, 'localhost', async () => {
+        app.listen(process.env.PORT || 3000, async () => {
             console.log('Starting server')
         })
     } catch(err) {
